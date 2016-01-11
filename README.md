@@ -1,0 +1,1 @@
+The HR database contains 7 tables. Every table has a primary key, and some of them have a secondary key which can be used to join the tables together.

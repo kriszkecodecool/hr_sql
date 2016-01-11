@@ -1,0 +1,3 @@
+SELECT employee_id,email,SUBSTRING(employee_id, 1, CHAR_LENGTH(employee_id) - 3),SUBSTRING(email, 1, CHAR_LENGTH(email) - 3) FROM employees;
+SELECT * from locations WHERE street_address > (SELECT min(street_address) FROM locations);
+SELECT first_name as appropriate_label, length(first_name) as appropriate_label2 FROM employees WHERE first_name LIKE "A%" or first_name LIKE "J%" or first_name like "M%";
